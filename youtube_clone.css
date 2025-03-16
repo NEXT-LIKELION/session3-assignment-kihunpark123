@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+}
+
+.categories_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories_box ul {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.categories_box li {
+    list-style-type: none;
+    padding: 5px 15px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.categories_box {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.icons i {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icons i {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.video-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video img {
+    width: 100%;
+}
+
+.video p {
+    margin-top: 5px;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar i {
+    font-size: 20px;
+}
+
+@media (min-width: 1536px) {
+    .video-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
